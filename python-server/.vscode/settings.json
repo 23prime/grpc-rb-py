@@ -16,5 +16,15 @@
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": ["--max-line-length", "120"],
 
-    "python.linting.mypyEnabled": true
+    "python.linting.mypyEnabled": true,
+
+    // Protocol Buffers
+    // Note:
+    //   Use clang-format to format .proto sources.
+    //   So, you must install clang-format and this extension.
+    "[proto3]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "clang-format.style": "google"
 }
