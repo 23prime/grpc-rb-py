@@ -12,3 +12,21 @@ Install Poetry according to this [here](https://python-poetry.org/docs/#installa
 $ cd python-server/
 $ poetry install
 ```
+
+## Python server ##
+
+Generate Python sources from `.proto` file:
+
+```console
+$ poetry run python -m grpc_tools.protoc \
+    -I./protos \
+    --python_out=./python_server \
+    --grpc_python_out=./python_server \
+    ./protos/helloworld.proto
+```
+
+Start server:
+
+```console
+$ poetry run python python_server/main.py
+```
