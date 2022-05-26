@@ -1,8 +1,8 @@
 """The Python implementation of the GRPC helloworld.Greeter server."""
 
+import logging
 from asyncio.log import logger
 from concurrent import futures
-import logging
 
 import grpc
 import helloworld_pb2
