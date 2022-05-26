@@ -88,6 +88,18 @@ six = ">=1.5.2"
 protobuf = ["grpcio-tools (>=1.46.3)"]
 
 [[package]]
+name = "grpcio-reflection"
+version = "1.46.3"
+description = "Standard Protobuf Reflection Service for gRPC"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+grpcio = ">=1.46.3"
+protobuf = ">=3.12.0"
+
+[[package]]
 name = "grpcio-tools"
 version = "1.46.3"
 description = "Protobuf code generator for gRPC"
@@ -201,7 +213,7 @@ dev = ["pre-commit", "tox"]
 name = "protobuf"
 version = "3.20.1"
 description = "Protocol Buffers"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 
@@ -297,7 +309,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.4"
-content-hash = "47f4a289554b157dae2634549af0d4a1ae25d20434398190b50fb783eb86c9a0"
+content-hash = "6f8945aab9d5d9c5dfb9e79741467ca5dfa8d9e044afd9ef7dababcaa7c2ccd7"
 
 [metadata.files]
 atomicwrites = [
@@ -400,6 +412,10 @@ grpcio = [
     {file = "grpcio-1.46.3-cp39-cp39-win32.whl", hash = "sha256:f5c6393fa645183ae858ebfbf72ab94e7ebafb5cd849dcf4ae8c53a83cce4e24"},
     {file = "grpcio-1.46.3-cp39-cp39-win_amd64.whl", hash = "sha256:158b90d4f1354f40e435f4c866057acc29a4364b214c31049c8b8c903646fbab"},
     {file = "grpcio-1.46.3.tar.gz", hash = "sha256:4b8fd8b1cd553635274b83cd984f0755e6779886eca53c1c71d48215962eb689"},
+]
+grpcio-reflection = [
+    {file = "grpcio-reflection-1.46.3.tar.gz", hash = "sha256:8925dea87a844802e0463849809d63dd0fca2c58fec0f6488a59636834f55a46"},
+    {file = "grpcio_reflection-1.46.3-py3-none-any.whl", hash = "sha256:ac72f983f5db197b2a964702d6ff1b246c43bf3c9596ae24d955e5b9662205d1"},
 ]
 grpcio-tools = [
     {file = "grpcio-tools-1.46.3.tar.gz", hash = "sha256:31fee436ace5b3bd950cc3a8e68d6b84de1d6dc755959db7badc3470cdf22f70"},
