@@ -15,7 +15,7 @@ $ poetry install
 
 ## Python server ##
 
-Generate Python sources from `.proto` file:
+- Generate Python sources from `.proto` file
 
 ```console
 $ poetry run python -m grpc_tools.protoc \
@@ -25,8 +25,20 @@ $ poetry run python -m grpc_tools.protoc \
     ./protos/helloworld.proto
 ```
 
-Start server:
+- Start server
 
 ```console
 $ poetry run python python_server/main.py
+```
+
+- Format code by black
+
+```console
+$ poetry run black python_server/ 
+```
+
+- Sort import by isort
+
+```console
+$ poetry run isort python_server/ 
 ```
