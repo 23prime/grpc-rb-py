@@ -3,7 +3,13 @@
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            // TODO: set true
+            // If set true to source.organizeImports, occur this error:
+            // ```
+            // Traceback (most recent call last):
+            // File "/path/to/grpc-rb-py/python-server/.venv/bin/isort", line 8, in <module>
+            // ```
+            "source.organizeImports": false
         }
     },
 
